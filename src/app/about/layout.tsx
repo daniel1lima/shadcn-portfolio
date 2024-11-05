@@ -1,6 +1,5 @@
 import { Header } from '@/components/sections';
 
-import Cursor from '@/components/cursor/cursor';
 import SmoothScroll from '@/components/smooth-scroll';
 
 import { createMetadata } from '@/lib/metadata';
@@ -57,7 +56,6 @@ export default function AboutLayout({
         />
         {children}
       </div>
-      <Cursor />
     </SmoothScroll>
   );
 }

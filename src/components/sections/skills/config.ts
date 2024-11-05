@@ -1,28 +1,27 @@
 import { Skill } from '@/types/skill';
 
-const trimLen: number = -1; // 0 is accordion only, -1 is does not restrict the length
+const trimLen: number = -1;
 
 const skills: Skill[] = [
   {
-    name: 'Web Development',
-    // todo: use proper thumbnail pics
-    thumbnail: '/images/skills/web-development.jpg',
-    description: `Web Development involves creating websites and web applications that are both visually appealing and highly functional. It encompasses a variety of technologies, frameworks, and best practices to ensure a seamless user experience and efficient performance.`
+    name: 'Software Development',
+    thumbnail: '/images/skills/software-development.jpg',
+    description: 'Python, TypeScript, JavaScript, Java, Rust, C/C++, SQL, R, and Go. Building scalable applications and microservices using modern development practices.'
   },
   {
-    name: 'UI/UX Design',
-    thumbnail: '/images/skills/ui-ux-design.jpg',
-    description: `UI/UX Design focuses on creating delightful user experiences through visually appealing and highly functional designs. This skill includes a variety of technologies, frameworks, and best practices to enhance user satisfaction and usability.`
+    name: 'Web Technologies',
+    thumbnail: '/images/skills/web-technologies.jpg',
+    description: 'React.js, Next.js, Flask, Django, and Node.js. Building responsive, performant web applications with focus on user experience.'
   },
   {
-    name: 'Database Management',
-    thumbnail: '/images/skills/database-management.jpg',
-    description: `Database Management involves efficiently storing and organizing data. This skill covers a range of technologies, frameworks, and best practices to ensure data integrity, security, and performance.`
+    name: 'Database & Cloud',
+    thumbnail: '/images/skills/database.jpg',
+    description: 'MySQL, Redis, DynamoDB, MongoDB, Supabase. AWS (EC2/S3/Bedrock), Docker, Git. Designing scalable architectures and managing cloud infrastructure.'
   },
   {
-    name: 'Mobile Development',
-    thumbnail: '/images/skills/mobile-development.jpg',
-    description: `Mobile Development entails crafting apps for smartphones and tablets that are both visually appealing and highly functional. It includes a variety of technologies, frameworks, and best practices to provide a seamless user experience on mobile devices.`
+    name: 'AI & Machine Learning',
+    thumbnail: '/images/skills/ai-ml.jpg',
+    description: 'RAG, TensorFlow, SpaCy, and Pandas. Implementing NLP solutions and sentiment analysis with focus on practical AI applications.'
   }
 ];
 

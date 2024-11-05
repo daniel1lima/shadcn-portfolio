@@ -1,5 +1,4 @@
 import Link from 'next/link';
-import Cursor from '@/components/cursor/cursor';
 import { cn } from '@/lib/utils';
 import { buttonVariants } from '@/components/ui/button';
 import Line from '@/components/motion/line';
@@ -29,7 +28,6 @@ export default function NotFound() {
           </Link>
         </div>
       </div>
-      <Cursor />
     </div>
   );
 }

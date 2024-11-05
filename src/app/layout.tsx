@@ -14,6 +14,8 @@ import Providers from '@/app/providers';
 
 import { createMetadata } from '@/lib/metadata';
 
+import { ThemeProvider } from 'next-themes'
+
 // https://iamsteve.me/blog/the-best-ink-trap-typefaces-for-websites
 const bricolage_grotesque = Bricolage_Grotesque({ subsets: ['latin'] });
 
@@ -37,11 +39,17 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <body className={bricolage_grotesque.className}>
-        <Providers>
-          <Loader />
-          {children}
-          <Toaster />
-        </Providers>
+        <ThemeProvider
+          attribute="class"
+          defaultTheme="system"
+          enableSystem
+        >
+          <Providers>
+            <Loader />
+            {children}
+            <Toaster />
+          </Providers>
+        </ThemeProvider>
       </body>
     </html>
   );

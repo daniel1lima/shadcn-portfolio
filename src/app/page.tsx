@@ -10,7 +10,6 @@ import {
   Footer
 } from '@/components/sections';
 
-import Cursor from '@/components/cursor/cursor';
 import SmoothScroll from '@/components/smooth-scroll';
 
 export default function Home() {
@@ -29,7 +28,6 @@ export default function Home() {
           <Footer />
         </main>
       </div>
-      <Cursor />
     </SmoothScroll>
   );
 }

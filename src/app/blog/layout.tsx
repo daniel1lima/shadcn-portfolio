@@ -3,7 +3,6 @@ import type { Metadata } from 'next';
 import { Header } from '@/components/sections';
 
 import Loader from '@/app/loader';
-import Cursor from '@/components/cursor/cursor';
 import SmoothScroll from '@/components/smooth-scroll';
 
 export default function BlogLayout({
@@ -17,7 +16,6 @@ export default function BlogLayout({
         <Header />
         {children}
       </div>
-      <Cursor />
     </SmoothScroll>
   );
 }

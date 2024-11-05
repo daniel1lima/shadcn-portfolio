@@ -2,9 +2,11 @@
 import { useEffect, useState } from 'react';
 import { motion } from 'framer-motion';
 import { opacity, slideUp } from './anim';
+import { useTheme } from 'next-themes';
 
 import { Teko } from 'next/font/google';
 import { cn } from '@/lib/utils';
+import { grid } from 'ldrs';
 
 interface PreloaderProps {
   progress: number;
@@ -12,8 +14,11 @@ interface PreloaderProps {
 
 const teko = Teko({ weight: '400', subsets: ['latin'] });
 
+grid.register();
+
 export function Preloader({ progress }: PreloaderProps) {
   const [dimension, setDimension] = useState({ width: 0, height: 0 });
+  const { theme } = useTheme();
 
   useEffect(() => {
     setDimension({ width: window.innerWidth, height: window.innerHeight });
@@ -38,7 +43,7 @@ export function Preloader({ progress }: PreloaderProps) {
       variants={slideUp}
       initial="initial"
       exit="exit"
-      className="fixed z-30 flex h-[100dvh] w-[100dvw] cursor-wait items-center justify-center bg-background px-[60px] pb-[40px]"
+      className="fixed z-30 flex h-[100dvh] w-[100dvw] items-center justify-center bg-background px-[60px] pb-[40px]"
     >
       {dimension.width > 0 && (
         <>
@@ -51,7 +56,7 @@ export function Preloader({ progress }: PreloaderProps) {
               'absolute z-[1] flex items-center text-[192px] text-foreground'
             )}
           >
-            {progress}
+            <l-grid size="60" speed="3" color={theme === 'dark' ? 'white' : 'black'}></l-grid>
           </motion.p>
           <svg className="absolute top-0 h-[calc(100%+300px)] w-full">
             <motion.path
