@@ -43,7 +43,7 @@ function ProjectCard({
       <CardContent className="p-4 md:p-6">
         <div className="grid gap-2">
           <AspectRatio
-            ratio={16 / 9}
+            ratio={4 / 3}
             className="z-[2] mb-2 inline-block overflow-hidden rounded-md"
           >
             <Image

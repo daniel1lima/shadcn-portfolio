@@ -2,32 +2,32 @@ import { Experience } from '@/types/experience';
 
 const experiences: Experience[] = [
   {
-    name: 'Web Development',
-    duration: '2022 - Present',
-    company: 'Acme Inc',
+    name: 'Software Engineer',
+    duration: 'May 2024 - Present',
+    company: 'Inner AI',
     description:
-      'Building beautiful and functional websites using modern web technologies, focusing on performance, accessibility, and SEO-friendly design.'
+      'Optimized AI endpoints for text, image, and video generation, collaborated with major companies like Bayer and Mercado Livre. Implemented synthetic tests, managed AWS infrastructure, and contributed to significant company growth including 10x ARR and 2800% increase in B2C users.'
   },
   {
-    name: 'UI/UX Design',
-    duration: '2021 - 2022',
-    company: 'Creative Designs Ltd',
+    name: 'Co-Founder & CTO',
+    duration: 'June 2023 - Present',
+    company: 'Opinio',
     description:
-      'Creating delightful and intuitive user experiences, specializing in responsive design and user-centric methodologies.'
+      'Founded and developed a B2B SaaS platform for automated company review analysis. Built full-stack application using React.js, Python, and DynamoDB. Implemented sentiment analysis pipeline using Vector Embeddings and Cosine similarity.'
   },
   {
-    name: 'Database Management',
-    duration: '2020 - 2022',
-    company: 'DataTech Solutions',
+    name: 'Developer Intern',
+    duration: 'June 2023 - Aug 2023',
+    company: 'Ascendo Resources',
     description:
-      'Storing and organizing data efficiently, ensuring data integrity, and optimizing database queries for high traffic applications.'
+      'Developed "Talent-flow", a full-stack tool using Django that automated resume analysis, compliance formatting, and contact scraping. Reduced manual work by 28 hours weekly and continues to be used by senior recruiters.'
   },
   {
-    name: 'Mobile Development',
-    duration: '2019 - 2021',
-    company: 'Innovative Apps Inc',
+    name: 'Applied Data Science and A.I Course',
+    duration: 'Jun 2021 - Aug 2022',
+    company: 'Digital Media Academy',
     description:
-      'Crafting engaging and scalable apps for smartphones and tablets, focusing on cross-platform development and native performance.'
+      'Completed intensive course working with Regression, Neural networks, computer vision, and reinforcement learning. Developed projects using Python, Pandas, Tensorflow, and other ML technologies.'
   }
 ];
 
