@@ -2,31 +2,19 @@ import { Contact } from '@/types/contact';
 import {
   SiGithub,
   SiLinkedin,
-  SiX,
-  SiYoutube
 } from '@icons-pack/react-simple-icons';
 
 const contact: Contact = {
-  email: 'john@example.com',
+  email: 'damorosolima@gmail.com',
   socials: [
     {
       name: 'Github',
-      href: 'https://github.com/',
+      href: 'https://github.com/daniel1lima',
       Icon: SiGithub
     },
     {
-      name: 'Youtube',
-      href: 'https://youtube.com/',
-      Icon: SiYoutube
-    },
-    {
-      name: 'X',
-      href: 'https://x.com/',
-      Icon: SiX
-    },
-    {
       name: 'Linkedin',
-      href: 'https://linkedin.com/',
+      href: 'https://www.linkedin.com/in/danielbalima/',
       Icon: SiLinkedin
     }
   ]

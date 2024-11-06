@@ -24,22 +24,62 @@ function Hero() {
             <h1 className="text-4xl font-light sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl 2xl:text-9xl text-center">
               <TextReveal>I&apos;m Daniel</TextReveal>
               <br />
-              <span className="flex items-center gap-3 md:gap-4">
+              <span className="flex flex-row items-center gap-3 md:gap-4">
                 <Reveal>
-                  <span>A </span>
-                  <span className="animate-gradient bg-gradient-to-r from-purple-500 via-pink-500 to-blue-500 bg-clip-text text-transparent bg-300% font-medium">
-                    Fullstack
+                  <span className="flex flex-row items-center gap-1">
+                    <span>A&nbsp;</span>
+                    <span className="flex">
+                      {'Fullstack'.split('').map((letter, index) => (
+                        <motion.span
+                          key={index}
+                          className="animate-gradient bg-gradient-to-r from-purple-500 via-pink-500 to-blue-500 bg-clip-text text-transparent bg-300% font-medium"
+                          whileHover={{ scale: 1.2 }}
+                          transition={{ type: "spring", stiffness: 400, damping: 10 }}
+                        >
+                          {letter}
+                        </motion.span>
+                      ))}
+                    </span>
+                    <span>&nbsp;Developer</span>
                   </span>
-                  <span> Developer</span>
                   <p className="text-base italic font-light md:text-lg lg:text-xl mt-2">
-                  (and fulltime student)
-                </p>
+                    (and fulltime student)
+                  </p>
                 </Reveal>
               </span>
             </h1>
           </div>
         </div>
       </div>
+      <div className="flex flex-colrelative">
+      <ParallaxImage
+        src="/images/hero.jpg"
+        containerRef={container}
+        alt="Hero image"
+        containerClassName="aspect-[4/2] w-full lg:mt-20"
+        priority
+        parallaxOptions={{
+          yStart: '-5%',
+          yEnd: '5%',
+          scaleStart: 1,
+          scaleEnd: 1.2
+        }}
+      />
+      <ParallaxImage
+        src="/images/INNER_059.jpg"
+        containerRef={container}
+        alt="Hero image"
+        containerClassName="aspect-[4/2] w-full lg:mt-20"
+        priority
+        parallaxOptions={{
+          yStart: '-5%',
+          yEnd: '5%',
+          scaleStart: 1,
+          scaleEnd: 1.2
+        }}
+      />
+      </div>
+      
     </section>
   );
 }

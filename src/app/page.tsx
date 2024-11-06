@@ -7,8 +7,10 @@ import {
   Testimonials,
   Projects,
   Contact,
-  Footer
+  Footer,
 } from '@/components/sections';
+
+import Scroller from '@/components/sections/scroller/modern/scroller';
 
 import SmoothScroll from '@/components/smooth-scroll';
 
@@ -21,9 +23,9 @@ export default function Home() {
           <Hero />
           <About />
           <Skills />
+          <Scroller/>
           <Projects />
           <Experience />
-          <Testimonials />
           <Contact />
           <Footer />
         </main>
