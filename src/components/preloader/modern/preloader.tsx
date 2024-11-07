@@ -4,6 +4,7 @@ import { motion } from 'framer-motion';
 import { opacity, slideUp } from './anim';
 import { useTheme } from 'next-themes';
 
+
 import { Teko } from 'next/font/google';
 import { cn } from '@/lib/utils';
 import { grid } from 'ldrs';
@@ -56,7 +57,7 @@ export function Preloader({ progress }: PreloaderProps) {
               'absolute z-[1] flex items-center text-[192px] text-foreground'
             )}
           >
-            <l-grid size="60" speed="3" color={theme === 'dark' ? 'white' : 'black'}></l-grid>
+            <l-grid size="60" speed="3" color={theme === 'dark' ? 'white' : 'white'}></l-grid>
           </motion.p>
           <svg className="absolute top-0 h-[calc(100%+300px)] w-full">
             <motion.path
