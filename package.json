@@ -11,6 +11,7 @@
     "commitlint": "commitlint --edit"
   },
   "dependencies": {
+    "@carefully-coded/react-text-gradient": "^1.0.6",
     "@hookform/resolvers": "^3.9.0",
     "@icons-pack/react-simple-icons": "^9.7.0",
     "@marsidev/react-turnstile": "^1.0.2",
