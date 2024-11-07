@@ -116,7 +116,7 @@ function About() {
           <div className="space-y-4 mt-8">
             {tags.map((tag, index) => {
               return (
-                <motion.div key={index} className="flex items-center gap-2">
+                <motion.div key={index} className="flex items-center gap-2 transition-all ease-in-out hover:-translate-x-1 ">
                   <tag.icon className="size-4" />
                   {tag.link && tag.icon === Building2 ? (
                     <a href={tag.link} target="_blank">
