@@ -9,7 +9,7 @@ import '@/styles/globals.css';
 import { Toaster } from '@/components/ui/sonner';
 
 import { metadata as meta } from '@/app/config';
-import Loader from '@/app/loader';
+import ClientLoader from '@/components/client-loader';
 import { Providers } from '@/components/providers';
 
 import { createMetadata } from '@/lib/metadata';
@@ -39,6 +39,7 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <body className={bricolage_grotesque.className}>
+        <ClientLoader />
         <Providers>{children}</Providers>
         <Toaster />
       </body>

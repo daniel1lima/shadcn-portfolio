@@ -18,12 +18,16 @@ const teko = Teko({ weight: '400', subsets: ['latin'] });
 grid.register();
 
 export function Preloader({ progress }: PreloaderProps) {
+  const [mounted, setMounted] = useState(false);
   const [dimension, setDimension] = useState({ width: 0, height: 0 });
   const { theme } = useTheme();
 
   useEffect(() => {
+    setMounted(true);
     setDimension({ width: window.innerWidth, height: window.innerHeight });
   }, []);
+
+  if (!mounted) return null;
 
   const initialPath = `M0 0 L${dimension.width} 0 L${dimension.width} ${dimension.height} Q${dimension.width / 2} ${dimension.height + 300} 0 ${dimension.height}  L0 0`;
   const targetPath = `M0 0 L${dimension.width} 0 L${dimension.width} ${dimension.height} Q${dimension.width / 2} ${dimension.height} 0 ${dimension.height}  L0 0`;

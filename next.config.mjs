@@ -13,6 +13,7 @@ const nextConfig = {
       config.resolve.fallback = {
         ...config.resolve.fallback,
         window: false,
+        HTMLElement: false
       };
     }
     return config;
