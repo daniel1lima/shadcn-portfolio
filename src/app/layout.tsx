@@ -10,7 +10,7 @@ import { Toaster } from '@/components/ui/sonner';
 
 import { metadata as meta } from '@/app/config';
 import Loader from '@/app/loader';
-import Providers from '@/app/providers';
+import { Providers } from '@/components/providers';
 
 import { createMetadata } from '@/lib/metadata';
 
@@ -33,23 +33,14 @@ export const metadata = createMetadata({
 
 export default function RootLayout({
   children
-}: Readonly<{
+}: {
   children: React.ReactNode;
-}>) {
+}) {
   return (
     <html lang="en" suppressHydrationWarning>
       <body className={bricolage_grotesque.className}>
-        <ThemeProvider
-          attribute="class"
-          defaultTheme="system"
-          enableSystem
-        >
-          <Providers>
-            <Loader />
-            {children}
-            <Toaster />
-          </Providers>
-        </ThemeProvider>
+        <Providers>{children}</Providers>
+        <Toaster />
       </body>
     </html>
   );

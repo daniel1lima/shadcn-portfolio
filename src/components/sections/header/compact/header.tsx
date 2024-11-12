@@ -82,7 +82,7 @@ const Header = ({ loader }: HeaderProps) => {
     >
       <div className="flex h-16 items-center justify-between px-4 md:px-6">
         <div className="flex w-full justify-between">
-          <Link href="/" className="flex items-center justify-center">
+          <Link href="/" >
             <span className="text-md font-semibold transition-transform hover:translate-x-1 hover:translate-y-1">
               {meta.author.name}
             </span>
@@ -101,7 +101,6 @@ const Header = ({ loader }: HeaderProps) => {
               <div className="flex items-center gap-4 lg:gap-6">
                 {links.slice(0, linkLimit).map(({ title, href }, index) => (
                   <Link
-                    className="flex items-center text-sm font-medium underline-offset-4 hover:underline"
                     href={href}
                     key={`header-desktop-link_${index}`}
                   >
@@ -148,7 +147,6 @@ const Header = ({ loader }: HeaderProps) => {
         <div className="flex flex-col gap-4 p-4">
           {links.map(({ title, href }, index) => (
             <Link
-              className="flex items-center text-sm font-medium underline-offset-4 hover:underline"
               href={href}
               onClick={toggleMenu}
               key={`header-mobile-link_${index}`}

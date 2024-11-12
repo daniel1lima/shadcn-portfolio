@@ -7,6 +7,15 @@ const nextConfig = {
     serverActions: {
       allowedOrigins: ['localhost:3000']
     }
+  },
+  webpack: (config, { isServer }) => {
+    if (isServer) {
+      config.resolve.fallback = {
+        ...config.resolve.fallback,
+        window: false,
+      };
+    }
+    return config;
   }
 };
 

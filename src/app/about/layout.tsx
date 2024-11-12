@@ -1,7 +1,5 @@
 import { Header } from '@/components/sections';
 
-import SmoothScroll from '@/components/smooth-scroll';
-
 import { createMetadata } from '@/lib/metadata';
 import type { AboutPage, WithContext } from 'schema-dts';
 
@@ -47,15 +45,13 @@ export default function AboutLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <SmoothScroll>
-      <div className="flex min-h-[100dvh] flex-col">
-        <Header />
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
-        />
-        {children}
-      </div>
-    </SmoothScroll>
+    <div className="flex min-h-[100dvh] flex-col">
+      <Header />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
+      {children}
+    </div>
   );
 }
