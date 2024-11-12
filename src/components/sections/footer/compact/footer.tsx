@@ -14,11 +14,7 @@ function Footer() {
           const { title, href } = link;
 
           return (
-            <Link
-              className="text-xs underline-offset-4 hover:underline"
-              href={href}
-              key={`l_${index}`}
-            >
+            <Link href={href} key={`l_${index}`}>
               {title}
             </Link>
           );

@@ -39,7 +39,7 @@ const Header = ({ loader }: HeaderProps) => {
         </Link>
         <div className="flex items-center gap-4">
           <ModeToggle />
-          <div onClick={() => setIsActive(!isActive)} className={styles.el}>
+          {/* <div onClick={() => setIsActive(!isActive)} className={styles.el}>
             <div className={styles.label}>
               <motion.p
                 variants={opacity}
@@ -54,7 +54,7 @@ const Header = ({ loader }: HeaderProps) => {
             <div
               className={`${styles.burger} ${isActive ? styles.burgerActive : ''}`}
             ></div>
-          </div>
+          </div> */}
         </div>
       </div>
       <motion.div

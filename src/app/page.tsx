@@ -26,7 +26,7 @@ export default function Home() {
           <Scroller/>
           <Projects />
           <Experience />
-          <Contact />
+          {/* <Contact /> */}
           <Footer />
         </main>
       </div>

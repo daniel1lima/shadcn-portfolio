@@ -20,7 +20,7 @@ function Scroller() {
   const iconStyle = "mx-8 text-gray-700 hover:text-primary transition-colors";
    
   return (
-    <MotionWrap className="w-full py-24 lg:py-32" id="scroller">
+    <MotionWrap className="w-full py-4 lg:py-4" id="scroller">
       <Marquee gradient={false} speed={50} autoFill={true}>
         {/* Languages */}
         <SiPython size={iconSize} className={iconStyle} />

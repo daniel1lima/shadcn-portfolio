@@ -2,12 +2,16 @@ import { FooterItem } from '@/types/footer';
 
 const footer: FooterItem[] = [
   {
-    title: 'Blog',
-    href: 'https://blog.example.com'
+    title: 'LinkedIn',
+    href: 'https://www.linkedin.com/in/danielbalima/'
   },
   {
-    title: 'Newsletter',
-    href: 'https://newsletter.example.com'
+    title: 'Github',
+    href: 'https://github.com/daniel1lima'
+  },
+  {
+    title: 'Email',
+    href: 'mailto:damorosolima@gmail.com'
   }
 ];
 

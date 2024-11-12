@@ -15,7 +15,6 @@ function Footer() {
 
           return (
             <Link
-              className="text-xs underline-offset-4 hover:underline"
               href={href}
               key={`l_${index}`}
             >

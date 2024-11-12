@@ -31,29 +31,13 @@ function Contact() {
             <div>
               <p className="text-sm text-muted-foreground">Email</p>
               {/* todo: seperate this into animated text and use an a instead */}
-              <Link
-                className={cn(
-                  buttonVariants({ variant: 'link' }),
-                  'text-md h-min w-min p-0 font-normal'
-                )}
-                href={`mailto:${contact.email}`}
-              >
-                {contact.email}
-              </Link>
+              <Link href={`mailto:${contact.email}`}>{contact.email}</Link>
             </div>
             <div>
               <p className="text-sm text-muted-foreground">Socials</p>
               <div className="flex flex-col gap-1">
                 {contact.socials.map(({ Icon, name, href }, index) => (
-                  <Link
-                    target="_blank"
-                    href={href}
-                    className={cn(
-                      buttonVariants({ variant: 'link' }),
-                      'text-md h-min w-min gap-1 p-0'
-                    )}
-                    key={`contact-social_${index}`}
-                  >
+                  <Link href={href} key={`contact-social_${index}`}>
                     {Icon && <Icon className="h-4 w-4" />}
                     {name}
                   </Link>

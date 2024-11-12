@@ -53,7 +53,7 @@ function Hero() {
                       {'Fullstack'.split('').map((letter, index) => (
                         <motion.span
                           key={index}
-                          className="animate-gradient bg-300% bg-gradient-to-r from-purple-500 via-pink-500 to-blue-500 bg-clip-text font-medium text-transparent"
+                          className="font-medium text-blue-500"
                           whileHover={{ scale: 1.2 }}
                           transition={{
                             type: 'spring',
